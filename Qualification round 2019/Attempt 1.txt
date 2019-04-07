@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int n,i,step,j;
+    cin>>n;
+    for(i=1;i<=n;i++) {
+        int d;
+        cin>>d;
+        string step;
+        cin>> step;
+        string step2(step.size(),'0');
+        for(j=0;j<step.size();j++) {
+            if (step[j] == 'S') {
+
+                step2[j] = 'E';
+            }
+            else {
+
+                step2[j] = 'S';
+            }
+        }
+
+
+        cout<<"Case "<<"#"<<i<<": ";
+        cout<<step2;
+        
+        cout<<endl;
+    }
+}
